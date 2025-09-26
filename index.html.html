@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAlili</title>
+  <style>
+    body {
+      margin: 0; /* no page margin */
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column; /* stack vertically */
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      box-sizing: border-box; /* includes padding & border */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+    }
+
+    .blue {
+      background-color: lightblue;
+      padding: 20px;
+      border: 10px solid blue;
+      margin-left: 0; /* flush left */
+      font-weight: normal;          /* regular text instead of bold */
+      line-height: 1.2em;           /* improve readability */
+      overflow: hidden;             /* prevent spill outside box */
+      word-wrap: break-word;        /* wrap text within box */
+      text-overflow: ellipsis;      /* adds "..." if text overflows */
+      justify-content: flex-start;  /* align text to top */
+      align-items: flex-start;      /* align text to top */
+    }
+
+    .yellow {
+      background-color: lightyellow;
+      border: 10px solid orange;
+      margin-left: 200px; /* shift right exactly by box width */
+    }
+
+    .red {
+      background-color: lightcoral;
+      padding: 20px;
+      border: 10px solid red;
+      margin-left: 0; /* back to left */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box blue">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="box yellow">YELLOW</div>
+    <div class="box red">RED</div>
+  </div>
+</body>
+</html>
